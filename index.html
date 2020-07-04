@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lucas Moyano</title>
+<meta name="language" content="Spanish, Espanol"> 
+<meta name="description" content="desc" />
+<meta name="keywords" content="tags" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="assets/normalize.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="assets/style.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="assets/script.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script>
+$(function() {
+	$( "#sortable" ).sortable();
+	$( "#sortable" ).disableSelection();
+});
+</script>
+
+</head>
+
+<body>
+	<img src="assets/bg.jpg" id="bg" />
+	<div id="main">
+		
+		<h1>Test de Personalidad</h1>
+
+		<div id="content">
+			<h2>Ordene las siguientes frases de acuerdo a que tan identificado se sienta con cada una de ellas:</h2>
+
+			<a href="#" id="play"><img src="assets/play.png" /></a>
+
+			<img src="assets/faces.png" id="faces" />
+
+			<ul id="sortable">
+			  <li class="ui-state-default" id="1"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Me gusta tener autoridad</li>
+			  <li class="ui-state-default" id="2"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Soy entusiasta</li>
+			  <li class="ui-state-default" id="3"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Soy sensible</li>
+			  <li class="ui-state-default" id="4"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Prefiero recibir instrucciones</li>
+			</ul>
+
+			<div id="buttons">
+				<a href="#" id="btn_prev"><img src="assets/btn_left.png" /></a>
+				<a href="#" id="btn_next"><img src="assets/btn_right.png" /></a>
+			</div>
+
+			<div id="idx">
+				<span id="current">1</span> / <span id="total">10</span>
+			</div>
+
+		</div>
+</div>
+
+</body>
+
+</html>
